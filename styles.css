@@ -1,12 +1,11 @@
 /* font-family: 'Quicksand', sans-serif;
 COLORS
 light-yellow - #f7e4bf;
-light-blue - ;
+light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
-
 body {
   font-family: 'Quicksand', sans-serif;
 }
@@ -21,30 +20,59 @@ section {
   align-items: center;
 }
 
-
 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-bottom: 80px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 25px;
   color: #ffffff;
 }
 
 .message-selection-box {
-  margin-bottom: 60px;
+  margin-bottom: 75px;
   width: 500px;
-  height: 150px;
+  height: 100px;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .receive-message {
   display: block;
   background-color: #134d71;
   color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  font-weight: lighter;
 }
+
 
 .message-box {
   width: 800px;
-  height: 250px;
+  height: 175px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 300px;
 }
 
 img {
   margin: 0 auto;
-  height: 45px;
-  width: 37px;
+  height: 100px;
+  width: 80px;
 }
