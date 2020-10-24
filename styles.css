@@ -12,6 +12,7 @@ body {
 
 .gradient {
   background: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  height: 100vh;
 }
 
 section {
@@ -33,15 +34,15 @@ h2 {
 
 .message-selection-box {
   margin-bottom: 75px;
-  width: 500px;
-  height: 100px;
+  width: 30%;
+  height: 20%;
   background-color: #ffffff;
   color: #000000;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   border-radius: 10px;
+  padding: 5px;
 }
 
 .receive-message {
@@ -49,7 +50,6 @@ h2 {
   background-color: #134d71;
   color: #ffffff;
   border-radius: 5px;
-  margin-bottom: 10px;
   margin-top: 20px;
   padding: 5px;
   padding-left: 20px;
@@ -60,22 +60,28 @@ h2 {
 }
 
 .message-box {
-  width: 800px;
-  height: 175px;
+  width: 700px;
+  height: 125px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   border-radius: 10px;
+}
+
+.message-displayed {
+  visibility: hidden;
 }
 
 img {
   margin: 0 auto;
-  height: 100px;
-  width: 80px;
+  height: 80px;
+  width: 50px;
+}
+
+.radio {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
