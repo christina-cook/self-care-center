@@ -1,4 +1,4 @@
-
+var receiveMessageButton = document.querySelector('.receive-message');
 var image = document.querySelector('img');
 var message = document.querySelector('.message');
 var inputs = document.querySelectorAll('input');
