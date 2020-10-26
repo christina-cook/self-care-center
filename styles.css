@@ -6,9 +6,9 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+
 body {
   font-family: 'Quicksand', sans-serif;
-  /* height: 100% */
 }
 
 .gradient {
@@ -45,7 +45,6 @@ h3 {
   font-size: 20px;
   color: #ffffff;
 }
-
 
 .login-box {
   background-color: #ffffff;
@@ -119,7 +118,6 @@ h3 {
 }
 
 .message-displayed {
-  /* visibility: hidden; */
   display: none;
 }
 
