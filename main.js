@@ -47,15 +47,23 @@ var messages = {
   mantras: mantras,
 }
 
-loginButton.addEventListener('click', displayLoginMessage);
+loginButton.addEventListener('click', displayMainPage);
 receiveMessageButton.addEventListener('click', displayMessage);
 
-function displayLoginMessage() {
+function displayMainPage() {
   loginPage.classList.add('hidden');
   mainPage.classList.remove('hidden');
-  event.preventDefault()
-  welcomeMessage.innerText = `Welcome, ${userName.value}!`;
-  welcomeMessage.classList.remove('hidden');
+  event.preventDefault();
+  showWelcomeMessage();
+}
+
+function showWelcomeMessage() {
+  if (!userName.value) {
+    welcomeMessage.classList.add('hidden');
+  } else {
+    welcomeMessage.innerText = `Welcome, ${userName.value}!`;
+    welcomeMessage.classList.remove('hidden');
+  }
 }
 
 function getRandomMessage(array) {
@@ -70,7 +78,7 @@ function displayMessage() {
       typeOfMessage = inputs[i].value;
     }
   }
-  var arrayOfMessages = messages[typeOfMessage]
-    message.innerText = getRandomMessage(arrayOfMessages);
+  var listOfMessages = messages[typeOfMessage]
+    message.innerText = getRandomMessage(listOfMessages);
     image.style.display = "none";
 }
