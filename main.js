@@ -6,7 +6,7 @@ var loginPage = document.querySelector('.login-page');
 var mainPage = document.querySelector('.main-page');
 var loginButton = document.querySelector('.login-button');
 var welcomeMessage = document.querySelector('.welcome');
-var name = document.querySelector('.name-input');
+var userName = document.querySelector('#user-name');
 
 var affirmations = [
   "I forgive myself and set myself free.",
@@ -54,9 +54,9 @@ function displayLoginMessage() {
   loginPage.classList.add('hidden');
   mainPage.classList.remove('hidden');
   event.preventDefault()
-  welcomeMessage.innerText = `Welcome, ${name.value}!`;
+  welcomeMessage.innerText = `Welcome, ${userName.value}!`;
+  welcomeMessage.classList.remove('hidden');
 }
-
 
 function getRandomMessage(array) {
   var index = Math.floor(Math.random() * array.length);
