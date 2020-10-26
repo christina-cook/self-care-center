@@ -2,6 +2,11 @@ var receiveMessageButton = document.querySelector('.receive-message');
 var image = document.querySelector('img');
 var message = document.querySelector('.message');
 var inputs = document.querySelectorAll('input');
+var loginPage = document.querySelector('.login-page');
+var mainPage = document.querySelector('.main-page');
+var loginButton = document.querySelector('.login-button');
+var welcomeMessage = document.querySelector('.welcome');
+var name = document.querySelector('.name-input');
 
 var affirmations = [
   "I forgive myself and set myself free.",
@@ -42,8 +47,15 @@ var messages = {
   mantras: mantras,
 }
 
-
+loginButton.addEventListener('click', displayLoginMessage);
 receiveMessageButton.addEventListener('click', displayMessage);
+
+function displayLoginMessage() {
+  loginPage.classList.add('hidden');
+  mainPage.classList.remove('hidden');
+  event.preventDefault()
+  welcomeMessage.innerText = `Welcome, ${name.value}!`;
+}
 
 
 function getRandomMessage(array) {
