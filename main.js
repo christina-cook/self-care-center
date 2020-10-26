@@ -78,7 +78,7 @@ function displayMessage() {
       typeOfMessage = inputs[i].value;
     }
   }
-  var arrayOfMessages = messages[typeOfMessage]
-    message.innerText = getRandomMessage(arrayOfMessages);
+  var listOfMessages = messages[typeOfMessage]
+    message.innerText = getRandomMessage(listOfMessages);
     image.style.display = "none";
 }
