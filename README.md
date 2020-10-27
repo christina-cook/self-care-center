@@ -11,7 +11,7 @@ Self Care Center is an app that helps users remind themselves of their inherent
 - CSS
 - JavaScript
 
-**Deploy Link:** [https://christina-cook.github.io/self-care-center/] (https://christina-cook.github.io/self-care-center/)
+**Deploy Link:** [https://christina-cook.github.io/self-care-center/](https://christina-cook.github.io/self-care-center/)
 
 ## Using Self Care Center
 To use the Self Care Center app, follow these steps:
@@ -24,7 +24,7 @@ To use the Self Care Center app, follow these steps:
 
 ![Screenshot of welcome message](assets/README-images/welcome-message.png)
 
-3. From the main page, you have the option to choose the type of message you'd like to receive: either an affirmation (thoughts of positive self-empowerment) or a mantra (a phrase that can be repeated again and again during your mindfulness practice
+3. From the main page, you have the option to choose the type of message you'd like to receive: either an affirmation (thoughts of positive self-empowerment) or a mantra (a phrase that can be repeated again and again during your mindfulness practice).
 
 4. Once you've made your selection, click `Receive Message` to display a message in the box below.
 
